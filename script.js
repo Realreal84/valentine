@@ -1,11 +1,12 @@
 function revealAnswer(answer) {
     var catResponse = document.getElementById('catResponse');
+    
     var yayText = document.createElement('p');
     yayText.className = 'yay-text';
     yayText.innerText = 'YAYAYAYAY';
-    
+
     var jumpingCat = document.createElement('img');
-    jumpingCat.src = 'cat-jump.gif'; // Replace 'your-cat-jumping.gif' with the actual filename
+    jumpingCat.src = 'cat-jump.gif'; // Replace with the actual filename
     jumpingCat.alt = 'Jumping Cat';
     jumpingCat.className = 'jumping-cat';
 
