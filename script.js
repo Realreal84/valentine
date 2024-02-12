@@ -21,4 +21,9 @@ function revealAnswer(answer) {
     catResponse.appendChild(jumpingCat);
     catResponse.appendChild(yayText);
 
-    // H
+    // Show the catResponse container
+    catResponse.style.display = 'block';
+
+    // Hide the buttons after clicking
+    document.getElementById('answerOfCourse').style.display = 'none';
+    document.getElementById(
