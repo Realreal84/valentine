@@ -1,6 +1,6 @@
 function revealAnswer(answer) {
     var catResponse = document.getElementById('catResponse');
-    
+
     var yayText = document.createElement('p');
     yayText.className = 'yay-text';
     yayText.innerText = 'YAYAYAYAY';
