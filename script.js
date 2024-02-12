@@ -23,3 +23,16 @@ function revealAnswer(answer) {
     document.getElementById('answerOfCourse').style.display = 'none';
     document.getElementById('answerDuh').style.display = 'none';
 }
+console.log('Before clearing content');
+catResponse.innerHTML = '';
+console.log('After clearing content');
+console.log('Creating yayText element');
+var yayText = document.createElement('p');
+yayText.className = 'yay-text';
+yayText.innerText = 'YAYAYAYAY';
+
+console.log('Creating jumpingCat element');
+var jumpingCat = document.createElement('img');
+jumpingCat.src = 'cat-jump.gif'; // Replace with the actual filename
+jumpingCat.alt = 'Jumping Cat';
+jumpingCat.className = 'jumping-cat';
