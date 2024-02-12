@@ -1,6 +1,8 @@
 function revealAnswer(answer) {
-    var catResponse = document.getElementById('catResponse');
+    console.log('revealAnswer function executed');
     
+    var catResponse = document.getElementById('catResponse');
+
     // Clear any previous content
     catResponse.innerHTML = '';
 
@@ -19,8 +21,4 @@ function revealAnswer(answer) {
     catResponse.appendChild(jumpingCat);
     catResponse.appendChild(yayText);
 
-    // Hide the buttons after clicking
-    document.getElementById('answerOfCourse').style.display = 'none';
-    document.getElementById('answerDuh').style.display = 'none';
-}
-
+    // H
