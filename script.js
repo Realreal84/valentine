@@ -24,6 +24,7 @@ function revealAnswer(answer) {
     // Show the catResponse container
     catResponse.style.display = 'block';
 
-    // Hide the buttons after clicking
-    document.getElementById('answerOfCourse').style.display = 'none';
-    document.getElementById(
+    // Disable the buttons after clicking
+    document.getElementById('answerOfCourse').disabled = true;
+    document.getElementById('answerDuh').disabled = true;
+}
