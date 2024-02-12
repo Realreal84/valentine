@@ -1,6 +1,18 @@
 function revealAnswer(answer) {
-    document.getElementById('catResponse').style.display = 'block';
-    document.getElementById('catResponse').innerHTML = '<img src="cat-jump.gif" alt="Jumping Cat" class="jumping-cat"><p class="yay-text">YAYAYAYAYAY</p>';
+    var catResponse = document.getElementById('catResponse');
+    var yayText = document.createElement('p');
+    yayText.className = 'yay-text';
+    yayText.innerText = 'YAYAYAYAY';
+    
+    var jumpingCat = document.createElement('img');
+    jumpingCat.src = 'cat-jump.gif'; // Replace 'your-cat-jumping.gif' with the actual filename
+    jumpingCat.alt = 'Jumping Cat';
+    jumpingCat.className = 'jumping-cat';
+
+    catResponse.innerHTML = ''; // Clear any previous content
+    catResponse.appendChild(jumpingCat);
+    catResponse.appendChild(yayText);
+
     document.getElementById('answerOfCourse').style.display = 'none';
     document.getElementById('answerDuh').style.display = 'none';
 }
